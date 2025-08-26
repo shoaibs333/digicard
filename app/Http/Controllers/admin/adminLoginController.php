@@ -1,5 +1,5 @@
 <?php
-// Added by Rizwan
+// Added by Rizwan Khan
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
