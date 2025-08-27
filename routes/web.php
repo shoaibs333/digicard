@@ -17,6 +17,9 @@ use App\Http\Controllers\user_admin\userAuthController;
 
 
 //********************************* Admin Routes *********************************
+//Route::get('admin/templates-edit',[adminTemplatesController::class,'adminTemplatesEditView']);
+Route::post('admin/templates-edit/{id}',[adminTemplatesController::class,'adminTemplatesEditAction']);
+Route::get('admin/templates-edit/{id}',[adminTemplatesController::class,'adminTemplatesEditView']);
 Route::post('admin/templates-add',[adminTemplatesController::class,'adminTemplatesAddAction']);
 Route::get('admin/templates-add',[adminTemplatesController::class,'adminTemplatesAddView']);
 Route::get('admin/templates',[adminTemplatesController::class,'adminTemplatesView']);
