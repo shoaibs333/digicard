@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 //********************************* Admin Controller *********************************
 use App\Http\Controllers\admin\adminDashboardController;
 use App\Http\Controllers\admin\adminloginController;
+use App\Http\Controllers\admin\adminTemplatesController;
 
 
 
@@ -16,6 +17,9 @@ use App\Http\Controllers\user_admin\userAuthController;
 
 
 //********************************* Admin Routes *********************************
+Route::post('admin/templates-add',[adminTemplatesController::class,'adminTemplatesAddAction']);
+Route::get('admin/templates-add',[adminTemplatesController::class,'adminTemplatesAddView']);
+Route::get('admin/templates',[adminTemplatesController::class,'adminTemplatesView']);
 Route::get('admin/dashboard',[adminDashboardController::class,'adminDashboardView']);
 Route::get('admin/login',[adminloginController::class,'adminLoginView']);
 Route::post('admin/adminLogin',[adminloginController::class,'adminLogin']);

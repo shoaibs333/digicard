@@ -87,9 +87,9 @@
                         </li>
 
                         <li>
-                            <a href="chat.html" class="waves-effect">
+                            <a href="{{url('admin/templates')}}" class="waves-effect">
                                 <i class="bx bx-chat"></i>
-                                <span key="t-chat">Chat</span>
+                                <span key="t-chat">Templates</span>
                             </a>
                         </li>
                     </ul>
